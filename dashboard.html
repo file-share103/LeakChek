@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head><body>
+<div class="glass panel">
+<h1>LeakGuard Pro Dashboard</h1>
+<input id="target" placeholder="Enter email or username">
+<button onclick="scanLeak()">Scan</button>
+<div id="results"></div>
+<canvas id="riskChart"></canvas>
+<button onclick="downloadPDF()">Download PDF Report</button>
+</div>
+<script src="js/scanner.js"></script>
+</body></html>
